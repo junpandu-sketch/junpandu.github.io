@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pendaftaran Lomba</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+
+            label {
+                display: block;
+            }
+
+            input, select {
+                padding: 5px 10px;
+                border: 2px solid #b2b2b2;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: #0099ff;
+                color: #ffffff;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .form-element {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            body {
+                background: linear-gradient(to right, #2196f3, #21cbf3);
+                padding: 40px ;
+                max-width: 600px;
+                margin: 0 auto;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+            }
+
+            h1 {
+                background: linear-gradient(to right, #2196f3, #21cbf3);
+                color: #ffffff;
+                padding: 5px;
+                border: 2px #c3c0c0;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            .pembungkus {
+                background: #ffffff;
+                padding: 30px;
+                border-radius: 10px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="pembungkus">
+        <h1>Pendaftaran Lomba ITB Stikom Bali </h1>
+        <form action="" method="post">
+            <div class="flex-container">
+                <div class="form-element">
+                    <label for="nama">NAMA</label>
+                    <input type="text" id="nama" placeholder="Input NAMA"/>
+                </div>
+                <div class="form-element">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" placeholder="Input NIM"/>
+                </div>
+                <div class="form-element">
+                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggal-lahir" />
+                </div>
+                <div class="form-element">
+                    <label for="prodi">Program Studi</label>
+                    <select id="prodi">
+                        <option value="" selected disabled>Pilih Program Studi</option>
+                        <option value="">S2 - Sistem Informasi</option>
+                        <option value="">S1 - Sistem Komputer</option>
+                        <option value="">S1 - Sistem Informasi</option>
+                        <option value="">S1 - Teknologi Informasi</option>
+                        <option value="">S1 - Bisnis Digital</option>
+                        <option value="">D3 - Manajemen Informatika</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="Kategori Lomba">Kategori Lomba</label>
+                    <select id="Kategori Lomba">
+                        <option value="" selected disabled>Pilih lomba</option>
+                        <option value="">Lomba Desain Poster</option>
+                        <option value="">Lomba Fotografi</option>
+                        <option value="">Lomba Menggambar</option>
+                        <option value="">Lomba Video Kreatif</option>
+                    </select>
+                </div>
+                <div>
+                    <td>Jenis Kelamin</td>
+                    <td><input type="radio" name="jk"> Laki-laki
+                        <input type="radio" name="jk"> Perempuan
+                    </td>
+                </div>
+                <div>
+                    <label>Unggah Bukti Pembayaran disini</label>
+                    <input type="file" id="bukti" name="bukti" accept="image/*" required>
+                </div>
+                <div> 
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
